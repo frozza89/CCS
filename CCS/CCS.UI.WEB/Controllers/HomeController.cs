@@ -14,5 +14,13 @@ namespace CCS.UI.WEB.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Index(string nome) 
+        {
+         
+            ViewBag.nome = nome;
+            return View();
+          
+        }
 	}
 }

@@ -4,6 +4,13 @@
 }
 
 <h2>Home</h2>
+<form method="post" action="@Url.Action()">
+    <label>Nome:</label>
+    <input type="text" name="nome" value=" " id="nome" />
+    <br />
+    <input type="submit" name="nome" value="Enviar" />
+</form>
+<p><h3>Olá @ViewBag.nome</h3></p>
 <div class="dropdown">
     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
         Dropdown
@@ -17,3 +24,8 @@
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
     </ul>
 </div>
+
+
+<button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-star"></span> Star
+</button>
